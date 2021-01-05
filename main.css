@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+.main__cards{
+    background-color: #F7F7FF;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 120px 100px repeat(3, 1fr);
+    grid-template-areas:
+                        "title"
+                        "time"
+                        "basic"
+                        "profesional"
+                        "master";
+    
+}
+
+.main__cards--title{
+    grid-area: title;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2.5rem;
+    color: #6D708F;
+    
+}
+
+.cards__time{
+    grid-area: time;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.cards__time span{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #B3B3C2;
+}
+
+.cards__time--icon{
+    width: 50px;
+    height: 50px;
+    background-image: url('./asests/encender.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+.card__basic{
+    grid-area: basic;
+}
+
+.card__profesional{
+    grid-area: profesional;
+}
+
+.card__master{
+    grid-area: master;
+}
