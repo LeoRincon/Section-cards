@@ -37,30 +37,39 @@ body{
 }
 
 .cards__time{
+    width: 100%;
+    height: 50px;
     grid-area: time;
     text-align: center;
-    margin-top: 20px;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .cards__time span{
-    margin-left: 20px;
+    margin-left: 6px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #B3B3C2;
+    align-self: center;
 }
 
-.cards__time--icon{
-    width: 50px;
-    height: 50px;
+.cards__time .cards__time--icon{
+    width: 30px;
+    height: 30px;
     background-image: url('./asests/encender.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-color: aqua;
 }
+
+.cards__time--icon:focus{
+    background-color: blue;
+}
+
 .card__basic{
     grid-area: basic;
+    display: flex;
+    justify-content: center;
 }
 
 .card__profesional{
@@ -70,3 +79,49 @@ body{
 .card__master{
     grid-area: master;
 }
+
+.card__basic-container{
+    min-width: 260px;
+    max-width: 280px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    position: relative;
+    justify-content: center;
+
+}
+
+.card__basic-container h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #7A7E8F;
+}
+
+.main__cards .cards--descriptions{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    font-size: 2rem;
+    color: #777890;
+    border-bottom: 1px solid #E7E6E8;
+}
+
+.card--price{
+    width: 90%;
+    font-size: 6rem;
+    text-align: center;
+    color: #494E5E;
+}
+
+.card--signo-dollar{
+    font-size: 3rem;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+
+
+
