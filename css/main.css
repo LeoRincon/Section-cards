@@ -56,7 +56,7 @@ body{
 .cards__time .cards__time--icon{
     width: 30px;
     height: 30px;
-    background-image: url('./asests/encender.svg');
+    background-image: url('../asests/apagar.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,3 +174,4 @@ body{
     font-size: 1.2rem;
     font-weight: bold;
 }
+
