@@ -100,6 +100,10 @@ body{
     border-radius: 30px;
 }
 
+.card__profesional-container{
+    background: linear-gradient(347deg,#6c70de 70%, #a0a7f0 100%);
+}
+
 .card__basic-container h3,
 .card__profesional-container h3,
 .card__master-container h3{
@@ -108,6 +112,10 @@ body{
     font-size: 2rem;
     color: #7A7E8F;
     margin-top: 30px;
+}
+
+.card__profesional-container h3{
+    color: white;
 }
 
 .main__cards .cards--descriptions{
@@ -119,6 +127,11 @@ body{
     border-bottom: 1px solid #c7c7d6;
 }
 
+.card__profesional-container .cards--descriptions,
+.card__profesional-container .card--price,
+.card__profesional-container .card--signo-dollar{
+    color: white;
+}
 .card--price{
     width: 90%;
     font-size: 6rem;
@@ -132,13 +145,14 @@ body{
     font-size: 3rem;
     position: absolute;
     top: 100px;
-    left: 60px;
+    left: 45px;
 }
+
 
 .cards--bottom-more{
     text-decoration: none;
     color: white;
-    background-color: #6C70DE;
+    background: linear-gradient(347deg,#6c70de 30%, #a0a7f0 100%);
     width: 224px;
     height: 30px;
     border-radius: 10px;
@@ -148,3 +162,15 @@ body{
     font-weight: bold;
 }
 
+.card__profesional-container .cards--bottom-more-vip{
+    background-color: white;
+    color:#6C70DE;
+    text-decoration: none;
+    width: 224px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
