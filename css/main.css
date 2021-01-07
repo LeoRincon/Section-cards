@@ -14,6 +14,10 @@ body{
 
 .main__cards{
     background-color: #F7F7FF;
+    background-image: url('../asests/fondo.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 120px 100px repeat(3, 1fr);
