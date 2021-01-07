@@ -36,6 +36,7 @@ body{
 
 .card__profesional {
     justify-content: center;
+    align-self: center;
 }
 
 .card__profesional-container{
