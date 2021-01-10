@@ -5,12 +5,12 @@
 .card__basic-container,
 .card__profesional-container,
 .card__master-container{
-    min-width: 320px;
-    max-width: 380px;
+  min-width: 320px;
+  max-width: 380px;
 
 }
 
 .card--signo-dollar {
-    top: 100px;
-    left: 90px;
+  top: 100px;
+  left: 90px;
 }
