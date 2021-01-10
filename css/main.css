@@ -1,181 +1,179 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body{
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
 }
 
 .main__cards{
-    background-color: #F7F7FF;
-    background-image: url('../asests/fondo.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 120px 100px repeat(3, 1fr);
-    grid-template-areas:
-                        "title"
-                        "time"
-                        "basic"
-                        "profesional"
-                        "master";
-    
+  background-color: #F7F7FF;
+  background-image: url('../asests/fondo.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 120px 100px repeat(3, 1fr);
+  grid-template-areas:
+                      "title"
+                      "time"
+                      "basic"
+                      "profesional"
+                      "master";
 }
 
 .main__cards--title{
-    grid-area: title;
-    width: 100%;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 2.5rem;
-    color: #6D708F;
-    
+  grid-area: title;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2.5rem;
+  color: #6D708F;
 }
 
 .cards__time{
-    width: 100%;
-    height: 50px;
-    grid-area: time;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 50px;
+  grid-area: time;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cards__time span{
-    margin-left: 6px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #B3B3C2;
-    align-self: center;
+  margin-left: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #B3B3C2;
+  align-self: center;
 }
 
 .cards__time .cards__time--icon{
-    width: 30px;
-    height: 30px;
-    background-image: url('../asests/apagar.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-image: url('../asests/apagar.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .cards__time--icon:focus{
-    background-color: blue;
+  background-color: blue;
 }
 
 .card__basic{
-    grid-area: basic;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  grid-area: basic;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card__profesional{
-    grid-area: profesional;
-    display: flex;
-    justify-content: center;
+  grid-area: profesional;
+  display: flex;
+  justify-content: center;
 }
 
 .card__master{
-    grid-area: master;
-    display: flex;
-    justify-content: center;
+  grid-area: master;
+  display: flex;
+  justify-content: center;
 }
 
 .card__basic-container,
 .card__profesional-container,
 .card__master-container{
-    min-width: 260px;
-    max-width: 280px;
-    height: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 4px 3px 15px 3px #d2c1c1;
-    border-radius: 30px;
+  min-width: 260px;
+  max-width: 280px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 4px 3px 15px 3px #d2c1c1;
+  border-radius: 30px;
 }
 
 .card__profesional-container{
-    background: linear-gradient(347deg,#6c70de 70%, #a0a7f0 100%);
+  background: linear-gradient(347deg,#6c70de 70%, #a0a7f0 100%);
 }
 
 .card__basic-container h3,
 .card__profesional-container h3,
 .card__master-container h3{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    color: #7A7E8F;
-    margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #7A7E8F;
+  margin-top: 30px;
 }
 
 .card__profesional-container h3{
-    color: white;
+  color: white;
 }
 
 .main__cards .cards--descriptions{
-    width: 90%;
-    height: 40px;
-    text-align: center;
-    font-size: 2rem;
-    color: #777890;
-    border-bottom: 1px solid #c7c7d6;
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: #777890;
+  border-bottom: 1px solid #c7c7d6;
 }
 
 .card__profesional-container .cards--descriptions,
 .card__profesional-container .card--price,
 .card__profesional-container .card--signo-dollar{
-    color: white;
+  color: white;
 }
 .card--price{
-    width: 90%;
-    font-size: 6rem;
-    text-align: center;
-    color: #494E5E;
-    border-bottom: 1px solid #c7c7d6;
-    height: 80px;
+  width: 90%;
+  font-size: 6rem;
+  text-align: center;
+  color: #494E5E;
+  border-bottom: 1px solid #c7c7d6;
+  height: 80px;
 }
 
 .card--signo-dollar{
-    font-size: 3rem;
-    position: absolute;
-    top: 100px;
-    left: 45px;
+  font-size: 3rem;
+  position: absolute;
+  top: 100px;
+  left: 45px;
 }
 
 
 .cards--bottom-more{
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(347deg,#6c70de 30%, #a0a7f0 100%);
-    width: 224px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(347deg,#6c70de 30%, #a0a7f0 100%);
+  width: 224px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .card__profesional-container .cards--bottom-more-vip{
-    background-color: white;
-    color:#6C70DE;
-    text-decoration: none;
-    width: 224px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
+  background-color: white;
+  color:#6C70DE;
+  text-decoration: none;
+  width: 224px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 

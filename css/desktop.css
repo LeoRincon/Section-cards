@@ -4,50 +4,50 @@ body{
 }
 
 .main__cards {
-    width: 980px;
-    max-width: 1024px;
-    height: 95vh;
-    margin: 0 auto;
-    margin-top: 25px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 20px 7px #b7b2b2;
-    background-color: #F7F7FF;
-    display: grid;
-    grid-template-columns: 60px repeat(3, 1fr) 60px;
-    grid-template-rows: 125px 80px 1fr 125px;
-    grid-template-areas:
-        ". . title . ."
-        ". . time . ."
-        ". basic profesional master ."
-        ". . . . .";
+  width: 980px;
+  max-width: 1024px;
+  height: 95vh;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px 7px #b7b2b2;
+  background-color: #F7F7FF;
+  display: grid;
+  grid-template-columns: 60px repeat(3, 1fr) 60px;
+  grid-template-rows: 125px 80px 1fr 125px;
+  grid-template-areas:
+      ". . title . ."
+      ". . time . ."
+      ". basic profesional master ."
+      ". . . . .";
 }
 
 .card__basic-container,
 .card__profesional-container,
 .card__master-container{
-    min-width: 260px;
-    max-width: 280px;
+  min-width: 260px;
+  max-width: 280px;
 }
 
 .card--signo-dollar {
-    top: 100px;
-    left: 45px;
+  top: 100px;
+  left: 45px;
 }
 
 .card__profesional {
-    justify-content: center;
-    align-self: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .card__profesional-container{
-    height: 500px;
+  height: 500px;
 }
 .card__basic {
-    margin-bottom: 0;
-    align-self: center;
+  margin-bottom: 0;
+  align-self: center;
 }
 
 .card__master {
-    margin-bottom: 0;
-    align-self: center;
+  margin-bottom: 0;
+  align-self: center;
 }
