@@ -49,24 +49,68 @@ body{
 
 .cards__time span{
   margin-left: 6px;
-  font-size: 1.2rem;
+  padding-top: 5px;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #B3B3C2;
-  align-self: center;
+}
+/*************************slider*******************************/
+
+.cards__time--slider input{
+  appearance: none;
 }
 
-.cards__time .cards__time--icon{
-  width: 30px;
+.cards__time--slider input {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.cards__time--slider {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 5px 0 5px 60px;
+  display: block;
+}
+
+.cards__time--slider input+i {
+  background: #f0f0f0;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cards__time--slider input[type=checkbox]+i {
+  width: 52px;
   height: 30px;
-  background-image: url('../asests/apagar.svg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
-.cards__time--icon:focus{
-  background-color: blue;
+.cards__time--slider input[type=checkbox]:checked+i:before {
+  left: 22px;
+  box-shadow: 3px 0 -3px 0 rgba(0, 0, 0, 0.2);
 }
+
+.cards__time--slider input[type=checkbox]:checked+i {
+  background: #6c70de
+}
+
+.cards__time--slider input[type=checkbox]+i:before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+
 
 .card__basic{
   grid-area: basic;
